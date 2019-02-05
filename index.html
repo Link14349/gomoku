@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <link type="text/css" rel="stylesheet" href="css/index.css"/>
+    <script type="text/javascript" src="javascripts/chess.js"></script>
+</head>
+<body>
+<h1>五子棋</h1>
+<canvas id="chess" class="chess">
+    <strong style="color: red;">您的浏览器不支持canvas, 请跟换浏览器!</strong>
+    <script type="text/javascript" src="javascripts/index.js"></script>
+</canvas>
+<div class="settings">
+    <h2>设置...</h2>
+    <div class="group">
+        <label>棋盘大小: </label>
+        <input type="number" min="5" value="15" id="size"/>
+    </div>
+    <div class="group">
+        <label>棋盘间距: </label>
+        <input type="number" min="0" value="30" id="padding"/>
+    </div>
+    <div class="group">
+        <label>格子大小: </label>
+        <input type="number" min="1" value="10" id="spacing"/>
+    </div>
+    <div class="group">
+        <label>模式: </label>
+        <select id="model">
+            <option value="ctc">电脑对垒模式</option>
+            <option value="ptp">双人模式</option>
+            <option value="ptc">单人模式</option>
+        </select>
+    </div>
+    <div class="group">
+        <button onclick="start()">开始</button>
+    </div>
+</div>
+</body>
+</html>
